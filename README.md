@@ -2,7 +2,7 @@
 
 This script does one thing, it converts images in the `inputs` folder to base64-encoded `.txt` files in the `outputs` folder.
 
-It uses Deno so that it can be as fast as possible.
+It uses [Deno](https://deno.land/) so that it can be as fast as possible.
 
 ## Install
 
