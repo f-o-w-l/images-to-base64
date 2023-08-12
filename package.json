@@ -1,0 +1,11 @@
+{
+  "name": "images-to-base64",
+  "version": "2.0.0",
+  "description": "Converts images in the 'inputs' folder to base64 .txt files in the 'outputs' folder.",
+  "main": "index.ts",
+  "author": "fowl.software@gmail.com",
+  "scripts": {
+    "convert": "deno run --allow-read --allow-write index.ts",
+    "clean": "rm -rf outputs/*"
+  }
+}
