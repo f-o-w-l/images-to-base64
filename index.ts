@@ -3,6 +3,7 @@ import { basename, extname } from "https://deno.land/std@0.151.0/path/posix.ts";
 
 const inputsPath = 'inputs'
 const outputsPath = 'outputs'
+const suffix = '-base64'
 
 function bufferToBase64(buf: Uint8Array): string {
   const binary = Array.from(buf).map(byte => String.fromCharCode(byte)).join("");
@@ -40,7 +41,7 @@ for (const imageFile of inputImages) {
   const nameNoExt = basename(path, extname(path))
 
   Deno.writeTextFile(
-    `${outputsPath}/${nameNoExt}-base64.txt`,
+    `${outputsPath}/${nameNoExt}${suffix}.txt`,
     base64
   )
 }
