@@ -35,7 +35,7 @@ const inputImages = walkSync(inputsPath)
 for (const imageFile of inputImages) {
   const { path } = imageFile
 
-  if (path === inputsPath) continue
+  if (path.includes('.gitignore') || path === inputsPath) continue
 
   const base64 = imageToBase64(path)
   const nameNoExt = basename(path, extname(path))

@@ -6,6 +6,7 @@
   "author": "fowl.software@gmail.com",
   "scripts": {
     "convert": "deno run --allow-read --allow-write index.ts",
-    "clean": "rm -rf outputs/*"
+    "clean": "rm -rf outputs/*",
+    "clean:all": "pnpm clean && rm -rf inputs/*"
   }
 }
